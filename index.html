@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Normann</title>
+
+  <!-- jquery -->
+  <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- gsap -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <!-- lenis js -->
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script> 
+  
+  <!-- split js -->
+  <script src="./assets/js/split.min.js"></script>
+  
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="./assets/css/layout.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <script defer src="./assets/js/main.js"></script>
+
+</head>
+<body>
+  <div class="group-cont-motion">
+    <h2 class="blind">로딩페이지</h2>
+    <img src="./assets/images/loading.svg" alt>
+  </div>
+
+  <div class="wrapper">
+      <div class="cont-wrapper">
+        <header class="header">
+          <div class="group-gnb">
+            <h1 class="logo">
+              <a href="">
+                <svg width="194" height="18" viewBox="0 0 194 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_387_6891)"><path d="M25.7246 -0.336914H22.4738V14.4296L3.23752 -0.303406V-0.336914H0V17.8163H3.23752V3.06988L22.4738 17.8029V17.8163H22.4915L22.5049 17.8274L22.5204 17.8163H25.7246V-0.336914Z" fill="white"></path><path d="M190.407 -0.336914V14.4296L171.146 -0.319044V-0.336914H167.895V-0.323513H167.893L167.895 -0.0867115V14.4296L148.661 -0.303406V-0.336914H145.422V17.8163H148.661V3.06988L167.895 17.8029V17.8163H167.915L167.927 17.8274L167.942 17.8163H171.146V3.01626L190.407 17.8029V17.8163H190.425L190.438 17.8274L190.454 17.8163H193.658V-0.336914H190.407Z" fill="white"></path><path d="M50.967 13.6635C50.4982 14.3248 49.7271 14.8497 48.7827 15.1446C47.6606 15.4641 46.794 15.6339 41.8744 15.6897C36.9548 15.6339 36.0882 15.4641 34.9661 15.1446C34.0239 14.8497 33.2507 14.3248 32.784 13.6635C32.3174 12.8258 32.1174 12.0752 32.0463 8.76221C32.1174 5.44924 32.3174 4.69863 32.784 3.85866C33.2507 3.19741 34.0239 2.67466 34.9661 2.37978C36.0882 2.06032 36.9548 1.88831 41.8744 1.8347C46.794 1.88831 47.6606 2.06032 48.7827 2.37978C49.7271 2.67466 50.4982 3.19741 50.967 3.85866C51.4314 4.69863 51.6292 5.44924 51.7025 8.76221C51.6292 12.0752 51.4314 12.8258 50.967 13.6635ZM53.9357 2.93827C53.138 1.7498 51.747 0.793667 50.0426 0.273154C48.2983 -0.227253 46.9318 -0.399266 41.8744 -0.452881C36.817 -0.399266 35.4505 -0.227253 33.7062 0.273154C32.0019 0.793667 30.6131 1.7498 29.8132 2.93827C29.111 4.17812 28.8821 5.1633 28.8044 8.76221C28.8821 12.3611 29.111 13.3463 29.8132 14.5861C30.6131 15.7746 32.0019 16.7307 33.7062 17.2513C35.4505 17.7517 36.817 17.9214 41.8744 17.9773C46.9318 17.9214 48.2983 17.7517 50.0426 17.2513C51.747 16.7307 53.138 15.7746 53.9357 14.5861C54.6378 13.3463 54.8667 12.3611 54.9445 8.76221C54.8667 5.1633 54.6378 4.17812 53.9357 2.93827Z" fill="white"></path><path d="M119.306 9.69582V8.81787C119.379 5.50491 119.577 4.7543 120.044 3.91433C120.51 3.25308 121.284 2.73033 122.226 2.43545C123.348 2.11599 124.214 1.94397 129.134 1.89036C134.054 1.94397 134.92 2.11599 136.042 2.43545C136.987 2.73033 137.758 3.25308 138.227 3.91433C138.691 4.7543 138.889 5.50491 138.962 8.81787V9.69582H119.306ZM141.195 2.99394C140.398 1.80547 139.007 0.849331 137.302 0.328818C135.558 -0.173823 134.191 -0.343602 129.134 -0.397217C124.077 -0.343602 122.71 -0.173823 120.966 0.328818C119.262 0.849331 117.873 1.80547 117.073 2.99394C116.371 4.23378 116.142 5.21896 116.064 8.81787V17.8185H119.306V11.9901H138.962V17.8185H142.204V8.81787C142.126 5.21896 141.9 4.23378 141.195 2.99394Z" fill="white"></path><path d="M100.016 12.0125L109.709 3.29563L109.7 17.8052H112.94V-0.350196L109.682 -0.359131L100.016 8.27513L90.3505 -0.359131L87.093 -0.350196V17.8052H90.3305L90.3239 3.29563L100.016 12.0125Z" fill="white"></path><path d="M61.3173 9.66018L61.3084 1.92398L74.6251 1.92845C79.8536 1.98429 80.6135 3.5436 80.5135 5.93841C80.5291 9.6021 77.1738 9.53732 74.6296 9.66689L61.3173 9.66018ZM76.3161 11.7869C81.9756 11.5278 83.8222 9.05255 83.7555 5.93841C83.6711 2.39534 82.4734 -0.359131 74.6251 -0.359131H58.0598V17.8253H61.2973L61.324 11.9567C61.324 11.9567 71.8231 11.9567 72.112 11.9522L79.3825 17.8275H83.7799L76.3161 11.7869Z" fill="white"></path></g><defs><clipPath id="clip0_387_6891"><rect width="194" height="18" fill="white"></rect></clipPath></defs></svg>
+                <span class="blind">???</span>
+              </a>
+            </h1>
+            
+            <div class="util-area menu">
+              <button class="btn-menu" aria-expanded="false">
+                <span class="blind">메뉴버튼</span>
+                <span class="line-box">
+                  <span class="line"></span>
+                  <span class="line"></span>
+                </span>
+                <span>Menu</span>
+              </button>
+              <a href="" class="btn-product">Products</a>
+            </div>
+          
+            <div class="util-area lang">
+              <button class="btn-lang">
+                <span class="blind">언어변경</span>
+                <span>EN</span>
+                <i><svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 .951417L7.06 0 4 3.09042.94 0 0 .951417 4 5 8 .951417z" fill="#000"></path></svg></i>
+              </button>
+              <div class="lang-box">
+                <a href="">ITALIANO</a>
+                <a href="">ENGLISH</a>
+                <a href="">FRANÇAIS</a>
+                <a href="">ESPAÑOL</a>
+                <a href="">DEUTSCH</a>
+              </div>
+            </div>
+          </div>
+
+          <nav class="group-submenu">
+            <ul class="menu-list">
+              <li class="menu-item"><a href="">Company</a></li>
+              <li class="menu-item"><a href="">Applications</a></li>
+              <li class="menu-item"><a href="">Magazine</a></li>
+              <li class="menu-item"><a href="">Download</a></li>
+              <li class="menu-item"><a href="">Support</a></li>
+              <li class="menu-item"><a href="">Contacts</a></li>
+            </ul>
+
+            <ul class="mobile-list">
+              <li class="mobile-item"><a href="">ITALIANO</a></li>
+              <li class="mobile-item"><a href="">ENGLISH</a></li>
+              <li class="mobile-item"><a href="">FRANÇAIS</a></li>
+              <li class="mobile-item"><a href="">ESPAÑOL</a></li>
+              <li class="mobile-item"><a href="">DEUTSCH</a></li>
+            </ul>
+          </nav>
+        </header>
+        
+        <main class="container">
+          <section class="sc-intro">
+            <h2 class="blind">normann intro</h2>
+            
+            <div class="intro-inner">
+              <div class="sticky">
+                <div class="group-first">
+                  <div class="title-area">
+                    <h3 class="title">
+                      <span class="title-wrap">
+                        <span>Specialists</span>
+                      </span>
+                      <span class="title-wrap">
+                        <span>in blast</span>
+                      </span>
+                      <span class="title-wrap">
+                        <span>chillers</span>
+                      </span>
+                    </h3>
+                  </div>
+                  <div class="bg-area">
+                    <video loop="" autoplay="" muted="" playsinline="" preload="" poster="https://www.normann.it/img/home/hero-poster.jpg">
+                      <source src="https://www.normann.it/img/home/hero.webm" type="video/webm">
+                      <source src="https://www.normann.it/img/home/hero.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+                <div class="group-second">
+                  <div class="title-area">
+                    <h3 class="title">
+                      <span>Optimal</span>
+                      <span>freshness,</span>
+                      <span>perfectly chilled.</span>
+                    </h3>
+                  </div>
+                  <div class="bg-area">
+                    <picture><img src="./assets/images/intro-title2-bg.png" alt></picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="sc-produce">
+            <h2 class="blind">why normann</h2>
+
+            <div class="produce-inner">
+              <div class="sticky-area">
+                <div class="imgs">
+                  <div class="bg-box"></div>
+                </div>
+              </div>
+
+              <div class="group-content">
+                <ul class="content-list first">
+                  <li class="content-item">
+                    <div class="text-box">
+                      <em class="title">wht normann</em>
+                      <p class="desc">A modular <span>range</span> designed<br class="mobile">and developed over 25<br class="mobile"> years of experience.</p>
+                    </div>
+                    <i class="ico-line"><img src="./assets/images/produce-line-white.svg" alt></i>
+                  </li>
+                  <li class="content-item">
+                    <div class="text-box">
+                      <span class="title">wht normann</span>
+                      <p class="desc">People at your side for fast<br class="mobile"> and unmediated assistance</p>
+                    </div>
+                    <i class="ico-line"><img src="./assets/images/produce-line-white.svg" alt></i>
+                  </li>
+                  <li class="content-item">
+                    <div class="text-box">
+                      <span class="title">wht normann</span>
+                      <p class="desc">High performance, various<br class="mobile"> usage features, low power<br class="mobile"> consumption.</p>
+                    </div>
+                    <i class="ico-line"><img src="./assets/images/produce-line-white.svg" alt></i>
+                  </li>
+                </ul>
+                <ul class="content-list second">
+                  <li class="content-item">
+                    <div class="text-box">
+                      <span class="title">why a blast chiller</span>
+                      <p class="desc">Save time by optimizing<br class="mobile"> preparations and<br class="mobile"> processing.</p>
+                    </div>
+                    <i class="ico-line"><img src="./assets/images/produce-line-black.svg" alt></i>
+                  </li>
+                  <li class="content-item">
+                    <div class="text-box">
+                      <span class="title">why a blast chiller</span>
+                      <p class="desc">Unaltered food goodness<br class="mobile"> and food safety</p>
+                    </div>
+                    <i class="ico-line"><img src="./assets/images/produce-line-black.svg" alt></i>
+                  </li>
+                  <li class="content-item">
+                    <div class="text-box">
+                      <span class="title">why a blast chiller</span>
+                      <p class="desc">Reduce waste and thus<br class="mobile"> reduce costs</p>
+                    </div>
+                    <i class="ico-line"><img src="./assets/images/produce-line-black.svg" alt=""></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="sc-app">
+            <h2 class="headline">Multiple applications</h2>
+            <div class="group-swiper">
+              <div class="swiper swiper-app">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <a href="" class="link">
+                      <picture><img src="./assets/images/app1.webp" alt></picture>
+                      <strong class="title">Blast chilling<br>and freezing</strong>
+                      <i class="ico-plus"><img src="./assets/images/app-plus.svg" alt></i>
+                    </a>
+                  </li>
+
+                  <li class="swiper-slide">
+                    <a href="" class="link">
+                      <picture><img src="./assets/images/app2.webp" alt></picture>
+                      <strong class="title">Fish santination</strong>
+                      <i class="ico-plus"><img src="./assets/images/app-plus.svg" alt></i>
+                    </a>
+                  </li>
+                  <li class="swiper-slide">
+                    <a href="" class="link">
+                      <picture><img src="./assets/images/app3.webp" alt></picture>
+                      <strong class="title">Ice-cream<br>hardening</strong>
+                      <i class="ico-plus"><img src="./assets/images/app-plus.svg" alt></i>
+                    </a>
+                  </li>
+                  <li class="swiper-slide">
+                    <a href="" class="link">
+                      <picture><img src="./assets/images/app4.webp" alt></picture>
+                      <strong class="title">Low<br>temoerature<br>cooking</strong>
+                      <i class="ico-plus"><img src="./assets/images/app-plus.svg" alt></i>
+                    </a>
+                  </li>
+                  <li class="swiper-slide">
+                    <a href="" class="link">
+                      <picture><img src="./assets/images/app5.webp" alt></picture>
+                      <strong class="title">Ready to serve<br>the retherm</strong>
+                      <i class="ico-plus"><img src="./assets/images/app-plus.svg" alt></i>
+                    </a>
+                  </li>
+                  <li class="swiper-slide">
+                    <a href="" class="swiper-slide">
+                      <picture><img src="./assets/images/app6.webp" alt></picture>
+                      <strong class="title">Pastry</strong>
+                      <i class="ico-plus"><img src="./assets/images/app-plus.svg" alt></i>
+                    </a>
+                  </li>
+                </ul>
+                
+                <button class="btn-prev">
+                  <span class="blind">이전 슬라이드</span>
+                  <svg width="14" height="24" viewBox="0 0 14 24"><polyline fill="none" stroke="#000" stroke-width="1.4" points="12.775,1 1.225,12 12.775,23"></polyline></svg>
+                </button>
+
+                <button class="btn-next">
+                  <span class="blind">다음 슬라이드</span>
+                  <svg width="14" height="24" viewBox="0 0 14 24"><polyline fill="none" stroke="#000" stroke-width="1.4" points="1.225,23 12.775,12 1.225,1"></polyline></svg>
+                </button>
+
+                <div class="pagination"></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="sc-product">
+            <h2 class="blind">products</h2>
+
+            <div class="swiper swiper-product">
+              <div class="swiper-wrapper">
+                <a href="" class="swiper-slide">
+                  <div class="text-area">
+                    <span class="cate">products</span>
+                    <strong class="title">Nortech<br class="mobile">Plus</strong>
+                    <p class="desc">Cooking and culling: a unique experience</p>
+                    <div class="btn-box">
+                      <i class="ico-plus"><img src="./assets/images/plus-black.svg" alt></i>
+                      <span>Learn more</span>
+                    </div>
+                  </div>
+                  <div class="img-area">
+                    <img src="./assets/images/product1.webp" alt>
+                  </div>
+                </a>
+
+                <a href="" class="swiper-slide">
+                  <div class="text-area">
+                    <span class="cate">products</span>
+                    <strong class="title">Nortech</strong>
+                    <p class="desc">All the power of cold</p>
+                    <div class="btn-box">
+                      <i class="ico-plus"><img src="./assets/images/plus-black.svg" alt></i>
+                      <span>Learn more</span>
+                    </div>
+                  </div>
+                  <div class="img-area">
+                    <img src="./assets/images/product2.webp" alt>
+                  </div>
+                </a>
+
+                <a href="" class="swiper-slide">
+                  <div class="text-area">
+                    <span class="cate">products</span>
+                    <strong class="title">Entry</strong>
+                    <p class="desc">By passion, by profession</p>
+                    <div class="btn-box">
+                      <i class="ico-plus"><img src="./assets/images/plus-black.svg" alt></i>
+                      <span>Learn more</span>
+                    </div>
+                  </div>
+                  <div class="img-area">
+                    <img src="./assets/images/product3.webp" alt>
+                  </div>
+                </a>
+              </div>
+
+              <div class="control-area">
+                <button class="btn-prev" aria-label="이전 슬라이드">
+                  <svg width="14" height="24" viewBox="0 0 14 24"><polyline fill="none" stroke="#000" stroke-width="1.4" points="12.775,1 1.225,12 12.775,23"></polyline></svg>
+                </button>
+                <button class="btn-next" aria-label="다음 슬라이드">
+                  <svg width="14" height="24" viewBox="0 0 14 24"><polyline fill="none" stroke="#000" stroke-width="1.4" points="1.225,23 12.775,12 1.225,1"></polyline></svg>
+                </button>
+              </div>
+
+              <div class="pagination"></div>
+            </div>
+          </section>
+
+          <section class="sc-about">
+            <div class="sticky">
+              <a href="">
+                <h2 class="title">about us</h2>
+                <p class="desc">Increase productivity, reduce waste, and maintain high quality and safety. Everything together with us. We are specialists in blast chillers and are by your side every step of the way, before and after purchase.</p>
+                <i class="ico-plus"><img src="./assets/images/plus-black.svg" alt></i>
+              </a>
+            </div>
+          </section>
+
+          <section class="sc-magazine">
+            <a href="">
+              <h2 class="title">Learn about the latest<br class="mobile"> trends in the world of<br class="mobile"> professional catering.</h2>
+              <div class="btn-area">
+                <i class="ico-plus"><img src="./assets/images/app-plus.svg" alt></i>
+                <span>read our magazine</span>
+              </div>
+            </a>
+            <picture><img src="./assets/images/magazine.webp" alt></picture>
+          </section>
+
+          <section class="sc-contact">
+            <picture><img src="./assets/images/contact.webp" alt></picture>
+            <div class="group-text">
+              <h2 class="title">be part of our family</h2>
+              <p class="desc">We are there for you who care about your buisness development.</p>
+              <div class="btn-area">
+                <a href="" class="btn-write" aria-label="write to us">Write to us</a>
+                <a href="" class="btn-call" aria-label="fix a call">Fix a call</a>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <footer class="footer">
+          <h2 class="blind">normann 푸터</h2>
+
+          <section class="sc-footer-info">
+            <ul class="info-list">
+              <li class="info-item">
+                <strong class="title">Do you need<br class="mobile"> information?</strong>
+                <p class="desc">Are you a restaurateur, chef, pastry chef or ice cream maker? We are here to help you find the right product.</p>
+                <a href="">Request information</a>
+              </li>
+              <li class="info-item">
+                <strong class="title">Are you a retailer or<br class="mobile"> distributor?</strong>
+                <p class="desc">We work with you to partner and offer the best possible service to your customers.</p>
+                <a href="">Contact us</a>
+              </li>
+              <li class="info-item">
+                <strong class="title">Do you need<br class="mobile"> technical support?</strong>
+                <p class="desc">With us, you always have people ready to support you throughout after-sales.</p>
+                <a href="">Contact us</a>
+              </li>
+            </ul>
+          </section>
+
+          <ul class="sns-list">
+            <li class="sns-item">
+              <a href="">
+                <span class="blind">페이스북</span>
+                <img src="./assets/images/facebook.svg" alt>
+              </a>
+            </li>
+            <li class="sns-item">
+              <a href="">
+                <span class="blind">링크드인</span>
+                <img src="./assets/images/linkedin.svg" alt>
+              </a>
+            </li>
+            <li class="sns-item">
+              <a href="">
+                <span class="blind">유튜브</span>
+                <img src="./assets/images/youtube.svg" alt>
+              </a>
+            </li>
+            <li class="sns-item">
+              <a href="">
+                <span class="blind">인스타그램</span>
+                <img src="./assets/images/insta.svg" alt>
+              </a>
+            </li>
+          </ul>
+
+          <address>Normann Srl Via Guglielmo Oberdan 69 - z.i. La Croce 33074 Fontanafredda (PN) - <a href="">Italy - T +39 0434 999079</a> - <a href="">info@normann.it</a> - P.IVA 01499920930</address>
+          
+          <ul class="term-list">
+            <li class="term-item"><a href="">Cookies</a></li>
+            <li class="term-item"><a href="">Privacy</a></li>
+            <li class="term-item"><a href="">Credits</a></li>
+          </ul>
+        </footer>
+      </div>
+
+      <section class="footer-fixed">
+        <h2 class="blind">푸터 메인링크</h2>
+        <a href=""><img src="./assets/images/footer-fixed.svg" alt></a>
+      </section>
+
+      <button class="btn-chatting" aria-label="채팅창 열기">
+        <i class="ico-close"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 19 18" class="conversations-visitor-close-icon"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g fill="#ffffff" transform="translate(-927 -991) translate(900.277 962)"><g transform="translate(27 29)"><path d="M10.627 9.013l6.872 6.873.708.707-1.415 1.414-.707-.707-6.872-6.872L2.34 17.3l-.707.707L.22 16.593l.707-.707L7.8 9.013.946 2.161l-.707-.708L1.653.04l.707.707L9.213 7.6 16.066.746l.707-.707 1.414 1.414-.707.708-6.853 6.852z"></path></g></g></g></svg></i>
+        <i class="ico-open"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="30" viewBox="0 0 39 37" class="conversations-visitor-open-icon"><defs><path id="conversations-visitor-open-icon-path-1:r0:" d="M31.4824242 24.6256121L31.4824242 0.501369697 0.476266667 0.501369697 0.476266667 24.6256121z"></path></defs><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g transform="translate(-1432 -977) translate(1415.723 959.455)"><g transform="translate(17 17)"><g transform="translate(6.333 .075)"><path fill="#ffffff" d="M30.594 4.773c-.314-1.943-1.486-3.113-3.374-3.38C27.174 1.382 22.576.5 15.36.5c-7.214 0-11.812.882-11.843.889-1.477.21-2.507.967-3.042 2.192a83.103 83.103 0 019.312-.503c6.994 0 11.647.804 12.33.93 3.079.462 5.22 2.598 5.738 5.728.224 1.02.932 4.606.932 8.887 0 2.292-.206 4.395-.428 6.002 1.22-.516 1.988-1.55 2.23-3.044.008-.037.893-3.814.893-8.415 0-4.6-.885-8.377-.89-8.394"></path></g><g fill="#ffffff" transform="translate(0 5.832)"><path d="M31.354 4.473c-.314-1.944-1.487-3.114-3.374-3.382-.046-.01-4.644-.89-11.859-.89-7.214 0-11.813.88-11.843.888-1.903.27-3.075 1.44-3.384 3.363C.884 4.489 0 8.266 0 12.867c0 4.6.884 8.377.889 8.393.314 1.944 1.486 3.114 3.374 3.382.037.007 3.02.578 7.933.801l2.928 5.072a1.151 1.151 0 001.994 0l2.929-5.071c4.913-.224 7.893-.794 7.918-.8 1.902-.27 3.075-1.44 3.384-3.363.01-.037.893-3.814.893-8.414 0-4.601-.884-8.378-.888-8.394"></path></g></g></g></g></svg></i>
+      </button>
+  </div>
+</body>
+</html>

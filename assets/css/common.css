@@ -1,0 +1,61 @@
+/* color */
+:root{
+  --themeColor1: rgb(17, 26, 39);
+  --themeColor2: #00263e;;
+}
+
+/* blind */
+.blind{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+}
+
+/* body */
+body{
+  line-height: 1.5;
+}
+body::selection{
+  background: #2929a8;
+}
+body::-webkit-scrollbar{
+  width: 6px;
+  background: #fff;
+}
+body::-webkit-scrollbar-thumb{
+  background: var(--themeColor2);
+  border-radius: 20px;
+}
+
+/* ico-plus */
+.ico-plus{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: rgba(255,255,255,.1);
+  border-radius: 100%;
+}
+
+/* swiper pagination */
+.pagination{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 15px;
+}
+.pagination .swiper-pagination-bullet{
+  width: 5px;
+  height: 5px;
+  background: rgba(0,0,0,.7);
+  transition: all .3s;
+}
+.pagination .swiper-pagination-bullet-active{
+  width: 15px;
+  height: 15px;
+  background: #000;
+}
