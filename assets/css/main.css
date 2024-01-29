@@ -243,7 +243,7 @@
     background-position: right bottom;
   }
   100% {
-      background-position: left bottom;
+    background-position: left bottom;
   }
 }
 .sc-produce .content-list{
