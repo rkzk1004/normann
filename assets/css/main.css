@@ -148,7 +148,7 @@
     width: calc(100% - 10px);
   }
   .sc-intro [class*='group-'] .title-area{
-    padding: 0 0 80px 20px;
+    padding: 0 20px 80px;
   }  
   .sc-intro [class*='group-'] .title{
     width: 300px;
@@ -168,6 +168,14 @@
   .sc-intro .group-second .title{
     width: 360px;
     font-size: 45px;
+  }
+}
+@media(max-width:499px){
+  .sc-intro [class*='group-'] .title-area{
+    padding: 0 16px 80px;
+  }
+  .sc-intro .group-second .title-area{
+    display: none;
   }
 }
 
@@ -827,6 +835,11 @@
   }
   .sc-magazine .title .mobile{
     display: none;
+  }
+}
+@media(max-width:767px){
+  .sc-magazine .title{
+    width: 100%;
   }
 }
 

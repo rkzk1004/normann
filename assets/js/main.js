@@ -8,6 +8,7 @@ gsap.ticker.add((time)=>{
   lenis.raf(time * 1000)
 })
 gsap.ticker.lagSmoothing(0)
+lenis.scrollTo(0)
 
 // .group-submenu 출력
 $('.btn-menu').click(function(){
